@@ -1,0 +1,74 @@
+:root {
+	--color-primary: #101010;
+	--color-secondary: #ffffff;
+	--color-muted: #808080;
+}
+
+body {
+	margin: 0;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	font-size: xx-large;
+	background: var(--color-primary);
+	color: var(--color-secondary);
+
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+hr {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+input {
+	margin: 8px auto;
+	font-size: large;
+	text-align: center;
+	padding: 4px;
+}
+
+#root {
+	overflow-y: scroll;
+	height: 100%;
+}
+
+#root::-webkit-scrollbar {
+	width: 8px;
+}
+
+#root::-webkit-scrollbar-thumb {
+	background: var(--color-muted);
+	border-radius: 10px;
+}
+
+#root::-webkit-scrollbar-thumb:hover {
+	background: var(--color-secondary);
+}
+
+#footer {
+	text-align: center;
+}
+
+.bookmark {
+	padding: 2px;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+small {
+	font-size: xx-small;
+	color: var(--color-muted);
+}
+
+.bookmark-detail {
+	padding-top: 10px;
+	float: right;
+}
+
+a {
+	margin: 0 auto;
+	font-size: x-large;
+	color: var(--color-secondary);
+}
