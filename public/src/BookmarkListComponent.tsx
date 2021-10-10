@@ -72,11 +72,11 @@ export class BookmarkListComponent extends React.Component {
 	public render () {
 		if (this.state.done) {
 			const filteredList = this.bookmarkList
-									 .filter(bm =>
-										 bm.title.toLowerCase().includes(this.state.query)
-											 || bm.url.toLowerCase().includes(this.state.query)
-									 )
-									 .map(bm => <BookmarkComponent key={ bm.url } url={ bm.url } title={ bm.title } />);
+				.filter(bm =>
+					bm.title.toLowerCase().includes(this.state.query)
+						|| bm.url.toLowerCase().includes(this.state.query)
+				)
+				.map(bm => <BookmarkComponent key={ bm.url } url={ bm.url } title={ bm.title } />);
 
 			if (filteredList.length > 0) {
 				return filteredList;
