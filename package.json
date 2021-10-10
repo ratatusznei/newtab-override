@@ -4,7 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"prebuild": "rm -rfv dist",
 		"build": "parcel build public/index.html",
+		"postbuild": "cp public/manifest.json dist/manifest.json",
+
 		"serve": "parcel public/index.html"
 	},
 	"author": "",
